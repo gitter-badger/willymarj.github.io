@@ -27,11 +27,11 @@
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="css/theme.css">
 		<link rel="stylesheet" href="css/theme-animate.css">
-		
+
 		<!-- Style Switcher-->
 		<link rel="stylesheet" href="style-switcher/css/style-switcher.css">
 		<link href="css/colors/default/style.html" rel="stylesheet" id="layoutstyle">
-
+		
 		<!-- Head libs -->
 		<script src="vendor/modernizr/modernizr.js"></script>
 
@@ -45,7 +45,7 @@
 		<![endif]-->
 
 	</head>
-	<body class="front bg-pattern-dark">
+	<body class="not-front bg-pattern-dark">
 		<div class="body">
 			<header id="header">
 				<div class="header-top">
@@ -76,10 +76,10 @@
 						<div class="navbar-collapse nav-main-collapse collapse">
 							<nav class="nav-main">
 								<ul class="nav nav-pills nav-main-menu">
-									<li class="dropdown active">
+									<li class="dropdown">
 										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Home</a>
 										<ul class="dropdown-menu">
-											<li class="active"><a href="index-2.html">Home Version 1</a></li>
+											<li><a href="index-2.html">Home Version 1</a></li>
 											<li><a href="index-3.html">Home Version 2</a></li>
 											<li><a href="index-4.html">Home Version 3</a></li>
 											<li><a href="index-5.html">Home Version 4</a></li>
@@ -119,7 +119,7 @@
 																	<img class="img-responsive" src="images/products/product-9.jpg" alt="">
 																	<span class="thumb-act thumb-act-first">
 																		<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-																		<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
+																		<a data-target="#quickview-detail" data-toggle="modal" href="javascript:void(0);"><i class="fa fa-eye"></i></a>
 																		<a href="#"><i class="fa fa-heart-o"></i></a>
 																		<a href="#"><i class="fa fa-exchange"></i></a>
 																	</span>
@@ -231,7 +231,7 @@
 																	<img class="img-responsive" src="images/products/product-4.jpg" alt="">
 																	<span class="thumb-act thumb-act-first">
 																		<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-																		<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
+																		<a data-target="#quickview-detail" data-toggle="modal" href="javascript:void(0);"><i class="fa fa-eye"></i></a>
 																		<a href="#"><i class="fa fa-heart-o"></i></a>
 																		<a href="#"><i class="fa fa-exchange"></i></a>
 																	</span>
@@ -310,7 +310,7 @@
 											</div>
 										</div>
 									</li>
-									<li class="dropdown">
+									<li class="dropdown active">
 										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop</a>
 										<ul class="dropdown-menu">
 											<li><a href="shop-grid-fullwidth.html">Shop Grid Full Width</a></li>
@@ -319,7 +319,7 @@
 											<li><a href="shop-list-sidebar.html">Shop List Sidebar</a></li>
 											<li><a href="shop-product-detail-fullwidth.html">Product Detail FullWidth</a></li>
 											<li><a href="shop-product-detail-classic.html">Product Detail Classic</a></li>
-											<li><a href="shop-product-detail-custom.html">Product Detail Custom</a></li>
+											<li class="active"><a href="shop-product-detail-custom.html">Product Detail Custom</a></li>
 											<li><a href="shop-cart-full.html">Shopping Cart Full</a></li>
 											<li><a href="shop-checkout.html">Shop-Checkout</a></li>
 										</ul>
@@ -361,110 +361,176 @@
 				
 			</header>
 
-			<div role="main" class="main">
+			<div role="main" class="main shop">
 				<section class="main-content-wrap">
 					<div class="container">
-						<div class="owl-carousel main-slides first-slides" data-plugin-options='{"items": 1, "autoPlay": false, "navigation": true}'>
-							<div class="slide-item">
-								<img class="img-responsive" src="images/slides/demo-slide-1.jpg" alt="">
-								<div class="slide-item-caption-wrap">
-									<div class="slide-item-caption-cont">
-										<div class="slide-item-caption-info">
-											<p class="product-cat">Lookbook</p>
-											<span class="divider bg-color1"></span>
-											<h1>Fall/Winter<br>
-											2014 new<br>
-											collection</h1>
-											<p class="btn-group"><a href="#" class="btn btn-default">Shop Men's</a> <a href="#" class="btn btn-default">Shop Women's</a></p>
+						<div class="row">
+							<div class="col-md-9 main-content main-content-full">
+								
+								<div class="row">
+									<div class="col-sm-5">
+										<div class="product-preview">
+											<div class="flexslider flexsliderPro">
+												<ul class="slides">
+													<li data-thumb="images/products/product-9.jpg">
+														<a class="popup-img" title="The Product 1" href="images/products/product-9.jpg"><img src="images/products/product-9.jpg" alt=""></a>
+													</li>
+													<li data-thumb="images/products/product-8.jpg">
+														<a class="popup-img" title="The Product 2" href="images/products/product-8.jpg"><img src="images/products/product-8.jpg" alt=""></a>
+													</li>
+													<li data-thumb="images/products/product-7.jpg">
+														<a class="popup-img" title="The Product 3" href="images/products/product-7.jpg"><img src="images/products/product-7.jpg" alt=""></a>
+													</li>
+													<li data-thumb="images/products/product-6.jpg">
+														<a class="popup-img" title="The Product 4" href="images/products/product-6.jpg"><img src="images/products/product-6.jpg" alt=""></a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-7">
+										<div class="thumb-item thumb-item-list summary">
+											<div class="thumb-item-content">
+												<h3><a href="#">Silver Stainless Steel</a></h3>
+												<ul class="list-review">
+													<li>
+														<div class="star-rating" title="Rated 5.00 out of 5">
+															<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
+														</div>
+													</li>
+													<li>0 Review</li>
+													<li class="btn-add-review"><a href="#">Add Your Review</a></li>
+												</ul>
+												<p class="product-price"><ins>$280.00</ins></p>
+												<p>Nam ullamcorper neque non erat elementum vulputate. Nullam dignissim lobortis interdum. Donec nisi est, tempus eget. Nam ullamcorper neque non erat elementum vulputate. Nullam dignissim lobortis interdum.</p>
+												<p class="quan">
+													<label>Qty:</label>
+													<input type="text" name="quantity" value="1" title="Qty" class="input-text qty">
+												</p>
+												<p class="thumb-act thumb-act-more">
+													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i> <span>Add to Cart</span></a>
+													<a href="#"><i class="fa fa-heart-o"></i></a>
+													<a href="#"><i class="fa fa-exchange"></i></a>
+												</p>
+												<hr>
+												<p class="product-cat">Category: <a href="#">Bottoms</a>.</p>
+												<ul class="social-icons-share">
+													<li><label>Share on:</label></li>
+													<li><a href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+													<li><a href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+													<li><a href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+													<li><a href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+													<li><a href="#" target="_blank" data-toggle="tooltip" data-placement="top" title="Email"><i class="fa fa-envelope-o"></i></a></li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="slide-item">
-								<img class="img-responsive" src="images/slides/demo-slide-2.jpg" alt="">
-								<div class="slide-item-caption-wrap">
-									<div class="slide-item-caption-cont">
-										<div class="slide-item-caption-info">
-											<p class="product-cat">Winter Style</p>
-											<span class="divider bg-color1"></span>
-											<h1>All The Trends You Need This Season</h1>
-											<p class="btn-group"><a href="#" class="btn btn-default">Shop Men's</a> <a href="#" class="btn btn-default">Shop Women's</a></p>
+								
+								<div id="accordion" class="panel-group">
+									<div class="panel panel-default pgl-panel">
+										<div class="panel-heading">
+											<h4 class="panel-title"> <a href="#collapseOne" data-parent="#accordion" data-toggle="collapse">Description</a> </h4>
+										</div>
+										<div class="panel-collapse collapse in" id="collapseOne">
+											<div class="panel-body">
+												<hr>
+												<p>Vestibulum sit amet accumsan nulla. Proin elementum felis vel sem lobortis, in consectetur nulla fringilla. Nunc nibh ligula, malesuada ac convallis et, commodo vitae risus. Pellentesque malesuada massa mollis dignissim tincidunt. Vestibulum vitae justo placerat, ullamcorper dui in, viverra eros.</p>
+											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div class="slide-item">
-								<img class="img-responsive" src="images/slides/demo-slide-3.jpg" alt="">
-								<div class="slide-item-caption-wrap">
-									<div class="slide-item-caption-cont">
-										<div class="slide-item-caption-info">
-											<p class="product-cat">Lookbook</p>
-											<span class="divider bg-color1"></span>
-											<h1>20% Off New!<br>
-											Limited Edition<br>
-											collection</h1>
-											<p class="btn-group"><a href="#" class="btn btn-default">Shop Men's</a> <a href="#" class="btn btn-default">Shop Women's</a></p>
+									<div class="panel panel-default pgl-panel">
+										<div class="panel-heading">
+											<h4 class="panel-title"> <a class="collapsed" href="#collapseTwo" data-parent="#accordion" data-toggle="collapse">Reviews (2)</a> </h4>
 										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<section class="featured-cat">
-						<div class="container">
-							<div class="row row-fluid">
-								<div class="col-xs-6">
-									<div class="cat-thumb-item cat-thumb-video">
-										<div class="cat-thumb-item-img">
-											<img class="img-responsive" src="images/products/demo-1.jpg" alt="">
-											<span class="cat-thumb-act">
-												<a href="#"><i class="fa fa-play-circle-o"></i></a>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-6">
-									<div class="row row-fluid cat-thumb-item">
-										<div class="col-xs-6 col-xs-offset-6 cat-thumb-item-img">
-											<img class="img-responsive" src="images/products/demo-2.jpg" alt="">
-										</div>
-										<div class="col-xs-6 cat-thumb-item-content-wrap bg-color1">
-											<div class="cat-thumb-item-content">
-												<div class="cat-thumb-item-content-inner">
-													<p class="product-cat">Online Sale</p>
-													<h3><a href="#">Aquatimer Automatic Watches</a></h3>
-													<p><a href="#">Shop now</a></p>
+										<div class="panel-collapse collapse" id="collapseTwo">
+											<div class="panel-body"> 
+												<div class="post-block post-comments clearfix">
+													<ul class="comments">
+														<li>
+															<div class="comment">
+																<div class="img-circle"> <img class="avatar" width="50" alt="" src="images/blog/avatar.png"> </div>
+																<div class="comment-block">
+																	<span class="comment-by"> <strong>Frank Reman</strong></span>
+																	<span class="date"><small><i class="fa fa-clock-o"></i> January 12, 2013</small></span>
+																	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+																</div>
+															</div>
+														</li>
+														<li>
+															<div class="comment">
+																<div class="img-circle"> <img class="avatar" width="50" alt="" src="images/blog/avatar.png"> </div>
+																<div class="comment-block">
+																	<span class="comment-by"> <strong>Frank Reman</strong></span>
+																	<span class="date"><small><i class="fa fa-clock-o"></i> July 11, 2014</small></span>
+																	<p>Nam viverra euismod odio, gravida pellentesque urna varius vitae, gravida pellentesque urna varius vitae</p>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="post-block post-leave-comment">
+													<h3>Leave a review</h3>
+													<form>
+														<div class="form-group">
+															<div class="row">
+																<div class="col-xs-6">
+																	<label>Your name *</label>
+																	<input type="text" value="" maxlength="100" class="form-control" name="name2" id="name2">
+																</div>
+																<div class="col-xs-6">
+																	<label>Your email address *</label>
+																	<input type="email" value="" maxlength="100" class="form-control" name="email" id="email">
+																</div>
+															</div>
+														</div>
+														<div class="form-group">
+															<div class="row">
+																<div class="col-sm-12">
+																	<label>Comment *</label>
+																	<textarea maxlength="5000" rows="10" class="form-control" name="comment" id="comment"></textarea>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-md-12">
+																<input type="submit" value="Submit Review" class="btn btn-grey" data-loading-text="Loading...">
+															</div>
+														</div>
+													</form>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-xs-6">
-									<div class="row row-fluid cat-thumb-item">
-										<div class="col-xs-6 col-xs-offset-6 cat-thumb-item-content-wrap">
-											<div class="cat-thumb-item-content">
-												<div class="cat-thumb-item-content-inner">
-													<p class="product-cat">Autumn 2014</p>
-													<h3><a href="#">Lookbook Printemps</a></h3>
-													<p><a href="#">See the collection</a></p>
-												</div>
-											</div>
-										</div>
-										<div class="col-xs-6 cat-thumb-item-img">
-											<img class="img-responsive" src="images/products/demo-3.jpg" alt="">
-										</div>
-									</div>
-								</div>
+								
 							</div>
-						</div>
-					</section>
-					
-					<section class="latest">
-						<div class="container">
-							<h2>Our Latest Picks</h2>
-							<p>The best of luxury watches</p>
+							
+							<div class="col-md-3 highlight-sidebar">
+								<aside class="block blk-highlight">
+									<h3>Why choose Us?</h3>
+									<ul class="list-categories">
+										<li>
+											<h4>Free Shipping</h4>
+											<p>On Orders over $50.00</p>
+										</li>
+										<li>
+											<h4>+12 345 6789</h4>
+											<p>Online Support 24/7</p>
+										</li>
+										<li>
+											<h4>Return & Exchange Policy</h4>
+											<p>Return or exchange within 15 days</p>
+										</li>
+									</ul>
+								</aside>
+							</div>
+						</div>	
+						
+						<div class="related">
+							<h2>Related Products</h2>
 							<div class="row">
-								<div class="owl-carousel multi-slides" data-plugin-options='{"items": 4, "singleItem": false, "itemsDesktop": 3, "pagination": false, "navigation": true}'>
+								<div class="owl-carousel multi-slides multi-slides-right" data-plugin-options='{"items": 4, "itemsDesktop": 4, "singleItem": false, "pagination": false, "navigation": true}'>
 									<div class="col-md-12">
 										<div class="thumb-item">
 											<div class="thumb-item-img">
@@ -474,7 +540,7 @@
 												</a>
 												<span class="thumb-act thumb-act-first">
 													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
+													<a data-target="#quickview-detail" data-toggle="modal" href="javascript:void(0);"><i class="fa fa-eye"></i></a>
 													<a href="#"><i class="fa fa-heart-o"></i></a>
 													<a href="#"><i class="fa fa-exchange"></i></a>
 												</span>
@@ -498,7 +564,7 @@
 												</a>
 												<span class="thumb-act thumb-act-first">
 													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
+													<a data-target="#quickview-detail" data-toggle="modal" href="javascript:void(0);"><i class="fa fa-eye"></i></a>
 													<a href="#"><i class="fa fa-heart-o"></i></a>
 													<a href="#"><i class="fa fa-exchange"></i></a>
 												</span>
@@ -522,7 +588,7 @@
 												</a>
 												<span class="thumb-act thumb-act-first">
 													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
+													<a data-target="#quickview-detail" data-toggle="modal" href="javascript:void(0);"><i class="fa fa-eye"></i></a>
 													<a href="#"><i class="fa fa-heart-o"></i></a>
 													<a href="#"><i class="fa fa-exchange"></i></a>
 												</span>
@@ -546,7 +612,7 @@
 												</a>
 												<span class="thumb-act thumb-act-first">
 													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
+													<a data-target="#quickview-detail" data-toggle="modal" href="javascript:void(0);"><i class="fa fa-eye"></i></a>
 													<a href="#"><i class="fa fa-heart-o"></i></a>
 													<a href="#"><i class="fa fa-exchange"></i></a>
 												</span>
@@ -565,12 +631,12 @@
 										<div class="thumb-item">
 											<div class="thumb-item-img">
 												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-5.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-5-over.jpg" alt="">
+													<img class="img-responsive" src="images/products/product-6.jpg" alt="">
+													<img class="img-responsive" src="images/products/product-7.jpg" alt="">
 												</a>
 												<span class="thumb-act thumb-act-first">
 													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
+													<a data-target="#quickview-detail" data-toggle="modal" href="javascript:void(0);"><i class="fa fa-eye"></i></a>
 													<a href="#"><i class="fa fa-heart-o"></i></a>
 													<a href="#"><i class="fa fa-exchange"></i></a>
 												</span>
@@ -587,40 +653,40 @@
 									</div>
 								</div>
 							</div>
-						</div>
-					</section>
-					
-					<section class="featured-foot">
-						<div class="container">
-							<div class="row row-fluid">
-								<div class="col-sm-6 contact-info-wrap equal-height bg-img-3">
-									<div class="contact-info">
-										<h2>Our Store</h2>
-										<address>
-											Pzza Martiri Olivetta, 16, 16034, Portofino, Italy
-										</address>
-										<span class="divider bg-color3"></span>
-										<p><strong>Opening hours</strong></p>
-										<p>Monday to Friday: 9am - 6pm<br>
-										Saturday to Sunday: 10am - 4pm</p>
-									</div>
+						</div>		
+					</div>
+				</section>
+				<section class="featured-foot">
+					<div class="container">
+						<div class="row row-fluid">
+							<div class="col-sm-6 contact-info-wrap equal-height bg-img-3">
+								<div class="contact-info">
+									<h2>Our Store</h2>
+									<address>
+										Pzza Martiri Olivetta, 16, 16034, Portofino, Italy
+									</address>
+									<span class="divider bg-color3"></span>
+									<p><strong>Opening hours</strong></p>
+									<p>Monday to Friday: 9am - 6pm<br>
+									Saturday to Sunday: 10am - 4pm</p>
 								</div>
-								<div class="col-sm-6 newsletter bg-color2 equal-height">
-									<div class="newsletter-form">
-										<h2>Sign up for updates</h2>
-										<p>Sign up to get exclusive offers from our store</p>
-										<form role="form">
-											<div class="form-group">
-												<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email Address">
-											</div>
-											<button type="submit" class="btn btn-default">Subscribe</button>
-										</form>
-									</div>
+							</div>
+							<div class="col-sm-6 newsletter bg-color2 equal-height">
+								<div class="newsletter-form">
+									<h2>Sign up for updates</h2>
+									<p>Sign up to get exclusive offers from our store</p>
+									<form role="form">
+										<div class="form-group">
+											<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email Address">
+										</div>
+										<button type="submit" class="btn btn-default">Subscribe</button>
+									</form>
 								</div>
 							</div>
 						</div>
-					</section>
+					</div>
 				</section>
+				
 			</div>
  
 			<footer id="footer" class="bg-color6">

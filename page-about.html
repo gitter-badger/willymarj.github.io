@@ -27,11 +27,11 @@
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="css/theme.css">
 		<link rel="stylesheet" href="css/theme-animate.css">
-		
+
 		<!-- Style Switcher-->
 		<link rel="stylesheet" href="style-switcher/css/style-switcher.css">
 		<link href="css/colors/default/style.html" rel="stylesheet" id="layoutstyle">
-
+		
 		<!-- Head libs -->
 		<script src="vendor/modernizr/modernizr.js"></script>
 
@@ -45,7 +45,7 @@
 		<![endif]-->
 
 	</head>
-	<body class="front bg-pattern-dark">
+	<body class="not-front bg-pattern-dark">
 		<div class="body">
 			<header id="header">
 				<div class="header-top">
@@ -76,10 +76,10 @@
 						<div class="navbar-collapse nav-main-collapse collapse">
 							<nav class="nav-main">
 								<ul class="nav nav-pills nav-main-menu">
-									<li class="dropdown active">
+									<li class="dropdown">
 										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Home</a>
 										<ul class="dropdown-menu">
-											<li class="active"><a href="index-2.html">Home Version 1</a></li>
+											<li><a href="index-2.html">Home Version 1</a></li>
 											<li><a href="index-3.html">Home Version 2</a></li>
 											<li><a href="index-4.html">Home Version 3</a></li>
 											<li><a href="index-5.html">Home Version 4</a></li>
@@ -119,7 +119,7 @@
 																	<img class="img-responsive" src="images/products/product-9.jpg" alt="">
 																	<span class="thumb-act thumb-act-first">
 																		<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-																		<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
+																		<a data-target="#quickview-detail" data-toggle="modal" href="javascript:void(0);"><i class="fa fa-eye"></i></a>
 																		<a href="#"><i class="fa fa-heart-o"></i></a>
 																		<a href="#"><i class="fa fa-exchange"></i></a>
 																	</span>
@@ -231,7 +231,7 @@
 																	<img class="img-responsive" src="images/products/product-4.jpg" alt="">
 																	<span class="thumb-act thumb-act-first">
 																		<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-																		<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
+																		<a data-target="#quickview-detail" data-toggle="modal" href="javascript:void(0);"><i class="fa fa-eye"></i></a>
 																		<a href="#"><i class="fa fa-heart-o"></i></a>
 																		<a href="#"><i class="fa fa-exchange"></i></a>
 																	</span>
@@ -334,10 +334,10 @@
 											<li><a href="blog-single.html">Blog Single</a></li>
 										</ul>
 									</li>
-									<li class="dropdown">
+									<li class="dropdown active">
 										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages</a>
 										<ul class="dropdown-menu">
-											<li><a href="page-about.html">About Us</a></li>
+											<li class="active"><a href="page-about.html">About Us</a></li>
 											<li><a href="page-404.html">Page 404</a></li>
 										</ul>
 									</li>
@@ -363,226 +363,196 @@
 
 			<div role="main" class="main">
 				<section class="main-content-wrap">
-					<div class="container">
-						<div class="owl-carousel main-slides first-slides" data-plugin-options='{"items": 1, "autoPlay": false, "navigation": true}'>
-							<div class="slide-item">
-								<img class="img-responsive" src="images/slides/demo-slide-1.jpg" alt="">
-								<div class="slide-item-caption-wrap">
-									<div class="slide-item-caption-cont">
-										<div class="slide-item-caption-info">
-											<p class="product-cat">Lookbook</p>
-											<span class="divider bg-color1"></span>
-											<h1>Fall/Winter<br>
-											2014 new<br>
-											collection</h1>
-											<p class="btn-group"><a href="#" class="btn btn-default">Shop Men's</a> <a href="#" class="btn btn-default">Shop Women's</a></p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="slide-item">
-								<img class="img-responsive" src="images/slides/demo-slide-2.jpg" alt="">
-								<div class="slide-item-caption-wrap">
-									<div class="slide-item-caption-cont">
-										<div class="slide-item-caption-info">
-											<p class="product-cat">Winter Style</p>
-											<span class="divider bg-color1"></span>
-											<h1>All The Trends You Need This Season</h1>
-											<p class="btn-group"><a href="#" class="btn btn-default">Shop Men's</a> <a href="#" class="btn btn-default">Shop Women's</a></p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="slide-item">
-								<img class="img-responsive" src="images/slides/demo-slide-3.jpg" alt="">
-								<div class="slide-item-caption-wrap">
-									<div class="slide-item-caption-cont">
-										<div class="slide-item-caption-info">
-											<p class="product-cat">Lookbook</p>
-											<span class="divider bg-color1"></span>
-											<h1>20% Off New!<br>
-											Limited Edition<br>
-											collection</h1>
-											<p class="btn-group"><a href="#" class="btn btn-default">Shop Men's</a> <a href="#" class="btn btn-default">Shop Women's</a></p>
-										</div>
-									</div>
-								</div>
-							</div>
+					<div class="intro-img">
+						<div class="container">
+							<img class="img-responsive" src="images/content/demo-about.jpg" alt="">
 						</div>
 					</div>
-					<section class="featured-cat">
+					
+					<div class="intro">
+						<div class="container">
+							<div class="intro-content">
+								<h1>Our Philosophy</h1>
+								<span class="divider"></span>
+								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+								</div>
+						</div>
+					</div>
+					
+					<section class="featured-fea">
 						<div class="container">
 							<div class="row row-fluid">
-								<div class="col-xs-6">
-									<div class="cat-thumb-item cat-thumb-video">
-										<div class="cat-thumb-item-img">
-											<img class="img-responsive" src="images/products/demo-1.jpg" alt="">
-											<span class="cat-thumb-act">
-												<a href="#"><i class="fa fa-play-circle-o"></i></a>
-											</span>
-										</div>
+								<div class="col-xs-6 border-left-top">
+									<div class="featured-item featured-highlight">
+										<img class="img-responsive" src="images/content/demo-1.jpg" alt="">
 									</div>
 								</div>
-								<div class="col-xs-6">
-									<div class="row row-fluid cat-thumb-item">
-										<div class="col-xs-6 col-xs-offset-6 cat-thumb-item-img">
-											<img class="img-responsive" src="images/products/demo-2.jpg" alt="">
-										</div>
-										<div class="col-xs-6 cat-thumb-item-content-wrap bg-color1">
-											<div class="cat-thumb-item-content">
-												<div class="cat-thumb-item-content-inner">
-													<p class="product-cat">Online Sale</p>
-													<h3><a href="#">Aquatimer Automatic Watches</a></h3>
-													<p><a href="#">Shop now</a></p>
+								
+								<div class="col-xs-3 border-left-top">
+									<div class="featured-item">
+										<img class="img-responsive" src="images/trans.png" alt="">
+										<div class="featured-item-info">
+											<div class="featured-item-front">
+												<div class="featured-item-content">
+													<span class="icon-circle"><i class="fa fa-shopping-cart"></i></span>
+													<h2>WooCommerce</h2>
+													<p>WooCommerce is the most popular WordPress eCommerce plugin.</p>
+												</div>
+											</div>
+											<div class="featured-item-back bg-color1">
+												<div class="featured-item-content">
+													<span class="icon-circle"><i class="fa fa-shopping-cart"></i></span>
+													<h2>WooCommerce</h2>
+													<p>WooCommerce is the most popular WordPress eCommerce plugin.</p>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div class="col-xs-6">
-									<div class="row row-fluid cat-thumb-item">
-										<div class="col-xs-6 col-xs-offset-6 cat-thumb-item-content-wrap">
-											<div class="cat-thumb-item-content">
-												<div class="cat-thumb-item-content-inner">
-													<p class="product-cat">Autumn 2014</p>
-													<h3><a href="#">Lookbook Printemps</a></h3>
-													<p><a href="#">See the collection</a></p>
+								
+								<div class="col-xs-3 border-left-top">
+									<div class="featured-item">
+										<img class="img-responsive" src="images/trans.png" alt="">
+										<div class="featured-item-info">
+											<div class="featured-item-front">
+												<div class="featured-item-content">
+													<span class="icon-circle"><i class="fa fa-flag-o"></i></span>
+													<h2>Compatible with  WPML</h2>
+													<p>WPML support for a multilanguage and multicurrency site</p>
+												</div>
+											</div>
+											<div class="featured-item-back bg-color1">
+												<div class="featured-item-content">
+													<span class="icon-circle"><i class="fa fa-flag-o"></i></span>
+													<h2>Compatible with  WPML</h2>
+													<p>WPML support for a multilanguage and multicurrency site</p>
 												</div>
 											</div>
 										</div>
-										<div class="col-xs-6 cat-thumb-item-img">
-											<img class="img-responsive" src="images/products/demo-3.jpg" alt="">
+									</div>
+								</div>
+								
+								<div class="col-xs-3 border-left-top">
+									<div class="featured-item">
+										<img class="img-responsive" src="images/trans.png" alt="">
+										<div class="featured-item-info">
+											<div class="featured-item-front">
+												<div class="featured-item-content">
+													<span class="icon-circle"><i class="fa fa-navicon"></i></span>
+													<h2>Mega Menu</h2>
+													<p>Mega menu is a user-friendly, highly customizable responsive.</p>
+												</div>
+											</div>
+											<div class="featured-item-back bg-color1">
+												<div class="featured-item-content">
+													<span class="icon-circle"><i class="fa fa-navicon"></i></span>
+													<h2>Mega Menu</h2>
+													<p>Mega menu is a user-friendly, highly customizable responsive.</p>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
+								
+								<div class="col-xs-3 border-left-top">
+									<div class="featured-item">
+										<img class="img-responsive" src="images/trans.png" alt="">
+										<div class="featured-item-info">
+											<div class="featured-item-front">
+												<div class="featured-item-content">
+													<span class="icon-circle"><i class="fa fa-dropbox"></i></span>
+													<h2>One Click Install Demo</h2>
+													<p>Easiest and fast way to build your website.</p>
+												</div>
+											</div>
+											<div class="featured-item-back bg-color1">
+												<div class="featured-item-content">
+													<span class="icon-circle"><i class="fa fa-dropbox"></i></span>
+													<h2>One Click Install Demo</h2>
+													<p>Easiest and fast way to build your website.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
 							</div>
 						</div>
 					</section>
 					
-					<section class="latest">
+					<section class="teams">
 						<div class="container">
-							<h2>Our Latest Picks</h2>
-							<p>The best of luxury watches</p>
+							<div class="intro-content">
+								<h2>Our Team</h2>
+								<span class="divider bg-color4"></span>
+								<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+							</div>
 							<div class="row">
-								<div class="owl-carousel multi-slides" data-plugin-options='{"items": 4, "singleItem": false, "itemsDesktop": 3, "pagination": false, "navigation": true}'>
-									<div class="col-md-12">
-										<div class="thumb-item">
-											<div class="thumb-item-img">
-												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-1.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-1-over.jpg" alt="">
-												</a>
-												<span class="thumb-act thumb-act-first">
-													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
-													<a href="#"><i class="fa fa-heart-o"></i></a>
-													<a href="#"><i class="fa fa-exchange"></i></a>
-												</span>
-											</div>
-											<div class="thumb-item-content">
-												<div class="star-rating pull-right" title="Rated 5.00 out of 5">
-													<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
-												</div>
-												<h3><a href="#">Silver Stainless Steel</a></h3>
-												<p class="product-cat"><a href="#">Bags</a>, <a href="#">Accessories</a></p>
-												<p class="product-price"><ins>$280.00</ins></p>
-											</div>
+								<div class="col-xs-3">
+									<div class="thumb-item team-item">
+										<div class="thumb-item-img">
+											<img class="img-responsive" src="images/team/team-mem-4.jpg" alt="">
+											<span class="thumb-act thumb-act-first">
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="Facebook"><i class="fa fa-facebook"></i></a>
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="Twitter"><i class="fa fa-twitter"></i></a>
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="GooglePlus"><i class="fa fa-google-plus"></i></a>
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="Instagram"><i class="fa fa-instagram"></i></a>
+											</span>
+										</div>
+										<div class="thumb-item-content">
+											<h3><a href="#">John Doe</a></h3>
+											<p class="team-item-title">Founder / Products Director</p>
 										</div>
 									</div>
-									<div class="col-md-12">
-										<div class="thumb-item">
-											<div class="thumb-item-img">
-												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-2.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-2-over.jpg" alt="">
-												</a>
-												<span class="thumb-act thumb-act-first">
-													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
-													<a href="#"><i class="fa fa-heart-o"></i></a>
-													<a href="#"><i class="fa fa-exchange"></i></a>
-												</span>
-											</div>
-											<div class="thumb-item-content">
-												<div class="star-rating pull-right" title="Rated 5.00 out of 5">
-													<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
-												</div>
-												<h3><a href="#">Silver Stainless Steel</a></h3>
-												<p class="product-cat"><a href="#">Bags</a>, <a href="#">Accessories</a></p>
-												<p class="product-price"><ins>$280.00</ins></p>
-											</div>
+								</div>
+								<div class="col-xs-3">
+									<div class="thumb-item team-item">
+										<div class="thumb-item-img">
+											<img class="img-responsive" src="images/team/team-mem-3.jpg" alt="">
+											<span class="thumb-act thumb-act-first">
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="Facebook"><i class="fa fa-facebook"></i></a>
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="Twitter"><i class="fa fa-twitter"></i></a>
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="GooglePlus"><i class="fa fa-google-plus"></i></a>
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="Instagram"><i class="fa fa-instagram"></i></a>
+											</span>
+										</div>
+										<div class="thumb-item-content">
+											<h3><a href="#">John Doe</a></h3>
+											<p class="team-item-title">Marketing & Sale Director</p>
 										</div>
 									</div>
-									<div class="col-md-12">
-										<div class="thumb-item">
-											<div class="thumb-item-img">
-												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-3.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-3-over.jpg" alt="">
-												</a>
-												<span class="thumb-act thumb-act-first">
-													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
-													<a href="#"><i class="fa fa-heart-o"></i></a>
-													<a href="#"><i class="fa fa-exchange"></i></a>
-												</span>
-											</div>
-											<div class="thumb-item-content">
-												<div class="star-rating pull-right" title="Rated 5.00 out of 5">
-													<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
-												</div>
-												<h3><a href="#">Silver Stainless Steel</a></h3>
-												<p class="product-cat"><a href="#">Bags</a>, <a href="#">Accessories</a></p>
-												<p class="product-price"><ins>$280.00</ins></p>
-											</div>
+								</div>
+								<div class="col-xs-3">
+									<div class="thumb-item team-item">
+										<div class="thumb-item-img">
+											<img class="img-responsive" src="images/team/team-mem-2.jpg" alt="">
+											<span class="thumb-act thumb-act-first">
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="Facebook"><i class="fa fa-facebook"></i></a>
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="Twitter"><i class="fa fa-twitter"></i></a>
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="GooglePlus"><i class="fa fa-google-plus"></i></a>
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="Instagram"><i class="fa fa-instagram"></i></a>
+											</span>
+										</div>
+										<div class="thumb-item-content">
+											<h3><a href="#">John Doe</a></h3>
+											<p class="team-item-title">System Admin</p>
 										</div>
 									</div>
-									<div class="col-md-12">
-										<div class="thumb-item">
-											<div class="thumb-item-img">
-												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-4.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-4-over.jpg" alt="">
-												</a>
-												<span class="thumb-act thumb-act-first">
-													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
-													<a href="#"><i class="fa fa-heart-o"></i></a>
-													<a href="#"><i class="fa fa-exchange"></i></a>
-												</span>
-											</div>
-											<div class="thumb-item-content">
-												<div class="star-rating pull-right" title="Rated 5.00 out of 5">
-													<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
-												</div>
-												<h3><a href="#">Silver Stainless Steel</a></h3>
-												<p class="product-cat"><a href="#">Bags</a>, <a href="#">Accessories</a></p>
-												<p class="product-price"><ins>$280.00</ins></p>
-											</div>
+								</div>
+								<div class="col-xs-3">
+									<div class="thumb-item team-item">
+										<div class="thumb-item-img">
+											<img class="img-responsive" src="images/team/team-mem-1.jpg" alt="">
+											<span class="thumb-act thumb-act-first">
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="Facebook"><i class="fa fa-facebook"></i></a>
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="Twitter"><i class="fa fa-twitter"></i></a>
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="GooglePlus"><i class="fa fa-google-plus"></i></a>
+												<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="Instagram"><i class="fa fa-instagram"></i></a>
+											</span>
 										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="thumb-item">
-											<div class="thumb-item-img">
-												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-5.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-5-over.jpg" alt="">
-												</a>
-												<span class="thumb-act thumb-act-first">
-													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
-													<a href="#"><i class="fa fa-heart-o"></i></a>
-													<a href="#"><i class="fa fa-exchange"></i></a>
-												</span>
-											</div>
-											<div class="thumb-item-content">
-												<div class="star-rating pull-right" title="Rated 5.00 out of 5">
-													<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
-												</div>
-												<h3><a href="#">Silver Stainless Steel</a></h3>
-												<p class="product-cat"><a href="#">Bags</a>, <a href="#">Accessories</a></p>
-												<p class="product-price"><ins>$280.00</ins></p>
-											</div>
+										<div class="thumb-item-content">
+											<h3><a href="#">John Doe</a></h3>
+											<p class="team-item-title">Sale / Marketer</p>
 										</div>
 									</div>
 								</div>
@@ -593,28 +563,52 @@
 					<section class="featured-foot">
 						<div class="container">
 							<div class="row row-fluid">
-								<div class="col-sm-6 contact-info-wrap equal-height bg-img-3">
-									<div class="contact-info">
-										<h2>Our Store</h2>
-										<address>
-											Pzza Martiri Olivetta, 16, 16034, Portofino, Italy
-										</address>
-										<span class="divider bg-color3"></span>
-										<p><strong>Opening hours</strong></p>
-										<p>Monday to Friday: 9am - 6pm<br>
-										Saturday to Sunday: 10am - 4pm</p>
+								<div class="col-sm-6 bg-color2 testimonial equal-height">
+									<div class="testimonial-wrap">
+										<h3>Happy clients</h3>
+										<span class="divider align-left bg-color3"></span>
+										<blockquote>
+											<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
+										</blockquote>
+										<div class="testimonial-author">
+											<div class="img-thumbnail-small">
+												<img alt="John Doe" src="images/content/client-1.jpg">
+											</div>
+											<h4>John Doe</h4>
+											<p>Happy Client</p>
+										</div>
 									</div>
 								</div>
-								<div class="col-sm-6 newsletter bg-color2 equal-height">
-									<div class="newsletter-form">
-										<h2>Sign up for updates</h2>
-										<p>Sign up to get exclusive offers from our store</p>
-										<form role="form">
-											<div class="form-group">
-												<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email Address">
-											</div>
-											<button type="submit" class="btn btn-default">Subscribe</button>
-										</form>
+								<div class="col-sm-6 partners equal-height">
+									<div class="partners-wrap">
+										<h3>Our partners</h3>
+										<span class="divider align-left bg-color4"></span>
+										<ul class="list-partners">
+											<li>
+												<a href="#" target="_blank"><img alt="Partner" src="images/partners/partner-1.jpg"></a>
+											</li>
+											<li>
+												<a href="#" target="_blank"><img alt="Partner" src="images/partners/partner-2.jpg"></a>
+											</li>
+											<li>
+												<a href="#" target="_blank"><img alt="Partner" src="images/partners/partner-3.jpg"></a>
+											</li>
+											<li>
+												<a href="#" target="_blank"><img alt="Partner" src="images/partners/partner-4.jpg"></a>
+											</li>
+											<li>
+												<a href="#" target="_blank"><img alt="Partner" src="images/partners/partner-5.jpg"></a>
+											</li>
+											<li>
+												<a href="#" target="_blank"><img alt="Partner" src="images/partners/partner-6.jpg"></a>
+											</li>
+											<li>
+												<a href="#" target="_blank"><img alt="Partner" src="images/partners/partner-7.jpg"></a>
+											</li>
+											<li>
+												<a href="#" target="_blank"><img alt="Partner" src="images/partners/partner-8.jpg"></a>
+											</li>
+										</ul>
 									</div>
 								</div>
 							</div>

@@ -27,11 +27,11 @@
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="css/theme.css">
 		<link rel="stylesheet" href="css/theme-animate.css">
-		
+
 		<!-- Style Switcher-->
 		<link rel="stylesheet" href="style-switcher/css/style-switcher.css">
 		<link href="css/colors/default/style.html" rel="stylesheet" id="layoutstyle">
-
+		
 		<!-- Head libs -->
 		<script src="vendor/modernizr/modernizr.js"></script>
 
@@ -45,7 +45,7 @@
 		<![endif]-->
 
 	</head>
-	<body class="front bg-pattern-dark">
+	<body class="not-front bg-pattern-dark">
 		<div class="body">
 			<header id="header">
 				<div class="header-top">
@@ -76,10 +76,10 @@
 						<div class="navbar-collapse nav-main-collapse collapse">
 							<nav class="nav-main">
 								<ul class="nav nav-pills nav-main-menu">
-									<li class="dropdown active">
+									<li class="dropdown">
 										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Home</a>
 										<ul class="dropdown-menu">
-											<li class="active"><a href="index-2.html">Home Version 1</a></li>
+											<li><a href="index-2.html">Home Version 1</a></li>
 											<li><a href="index-3.html">Home Version 2</a></li>
 											<li><a href="index-4.html">Home Version 3</a></li>
 											<li><a href="index-5.html">Home Version 4</a></li>
@@ -119,7 +119,7 @@
 																	<img class="img-responsive" src="images/products/product-9.jpg" alt="">
 																	<span class="thumb-act thumb-act-first">
 																		<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-																		<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
+																		<a data-target="#quickview-detail" data-toggle="modal" href="javascript:void(0);"><i class="fa fa-eye"></i></a>
 																		<a href="#"><i class="fa fa-heart-o"></i></a>
 																		<a href="#"><i class="fa fa-exchange"></i></a>
 																	</span>
@@ -231,7 +231,7 @@
 																	<img class="img-responsive" src="images/products/product-4.jpg" alt="">
 																	<span class="thumb-act thumb-act-first">
 																		<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-																		<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
+																		<a data-target="#quickview-detail" data-toggle="modal" href="javascript:void(0);"><i class="fa fa-eye"></i></a>
 																		<a href="#"><i class="fa fa-heart-o"></i></a>
 																		<a href="#"><i class="fa fa-exchange"></i></a>
 																	</span>
@@ -310,7 +310,7 @@
 											</div>
 										</div>
 									</li>
-									<li class="dropdown">
+									<li class="dropdown active">
 										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop</a>
 										<ul class="dropdown-menu">
 											<li><a href="shop-grid-fullwidth.html">Shop Grid Full Width</a></li>
@@ -321,7 +321,7 @@
 											<li><a href="shop-product-detail-classic.html">Product Detail Classic</a></li>
 											<li><a href="shop-product-detail-custom.html">Product Detail Custom</a></li>
 											<li><a href="shop-cart-full.html">Shopping Cart Full</a></li>
-											<li><a href="shop-checkout.html">Shop-Checkout</a></li>
+											<li class="active"><a href="shop-checkout.html">Shop-Checkout</a></li>
 										</ul>
 									</li>
 									<li class="dropdown">
@@ -361,266 +361,203 @@
 				
 			</header>
 
-			<div role="main" class="main">
+			<div role="main" class="main shop">
+				
 				<section class="main-content-wrap">
 					<div class="container">
-						<div class="owl-carousel main-slides first-slides" data-plugin-options='{"items": 1, "autoPlay": false, "navigation": true}'>
-							<div class="slide-item">
-								<img class="img-responsive" src="images/slides/demo-slide-1.jpg" alt="">
-								<div class="slide-item-caption-wrap">
-									<div class="slide-item-caption-cont">
-										<div class="slide-item-caption-info">
-											<p class="product-cat">Lookbook</p>
-											<span class="divider bg-color1"></span>
-											<h1>Fall/Winter<br>
-											2014 new<br>
-											collection</h1>
-											<p class="btn-group"><a href="#" class="btn btn-default">Shop Men's</a> <a href="#" class="btn btn-default">Shop Women's</a></p>
+						<div class="row">
+							<div class="col-md-12 main-content main-content-full">
+								<div class="row featured-boxes">
+									<div class="col-md-8">
+										
+										<div class="featured-box featured-box-secondary featured-box-cart">
+											<div class="box-content">
+												<h4>Billing Address</h4>
+												<p>Constructed in cotton sweat fabric, this lovely piece, lacus eu mattis auctor, dolor lectus venenatis nulla</p>
+												<div class="form-horizontal">
+													<div class="form-group">
+														<label for="selectCountry" class="col-sm-2 control-label">Country <span class="required">*</span></label>
+														<div class="col-sm-10">
+															<select id="selectCountry" class="chosen-select">
+																<option value="">Select a country</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputFN" class="col-sm-2 control-label">First Name <span class="required">*</span></label>
+														<div class="col-sm-10">
+															<input type="text" class="form-control" id="inputFN">
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputLN" class="col-sm-2 control-label">Last Name <span class="required">*</span></label>
+														<div class="col-sm-10">
+															<input type="text" class="form-control" id="inputLN">
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputCN" class="col-sm-2 control-label">Company Name</label>
+														<div class="col-sm-10">
+															<input type="text" class="form-control" id="inputCN">
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputAdd" class="col-sm-2 control-label">Address <span class="required">*</span></label>
+														<div class="col-sm-10">
+															<input type="text" class="form-control" id="inputAdd">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-10 col-sm-offset-2">
+															<input type="text" class="form-control" id="inputAdd2">
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputCity" class="col-sm-2 control-label">Town / City <span class="required">*</span></label>
+														<div class="col-sm-10">
+															<input type="text" class="form-control" id="inputCity">
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputPostcode" class="col-sm-2 control-label">Postcode <span class="required">*</span></label>
+														<div class="col-sm-10">
+															<input type="text" class="form-control" id="inputPostcode">
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputEmail3" class="col-sm-2 control-label">Email Address <span class="required">*</span></label>
+														<div class="col-sm-10">
+															<input type="email" class="form-control" id="inputEmail3">
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="inputPhone" class="col-sm-2 control-label">Phone <span class="required">*</span></label>
+														<div class="col-sm-10">
+															<input type="number" class="form-control" id="inputPhone">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-12">
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox">
+																	Create an account? </label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-sm-12">
+															<div class="checkbox">
+																<label>
+																	<input type="checkbox">
+																	Ship to billing address? </label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="textNotes" class="col-sm-2 control-label">Order Notes</label>
+														<div class="col-sm-10">
+															<textarea class="form-control" rows="5" id="textNotes"></textarea>
+														</div>
+													</div>
+													
+												</div>
+											</div>
 										</div>
+
 									</div>
-								</div>
-							</div>
-							<div class="slide-item">
-								<img class="img-responsive" src="images/slides/demo-slide-2.jpg" alt="">
-								<div class="slide-item-caption-wrap">
-									<div class="slide-item-caption-cont">
-										<div class="slide-item-caption-info">
-											<p class="product-cat">Winter Style</p>
-											<span class="divider bg-color1"></span>
-											<h1>All The Trends You Need This Season</h1>
-											<p class="btn-group"><a href="#" class="btn btn-default">Shop Men's</a> <a href="#" class="btn btn-default">Shop Women's</a></p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="slide-item">
-								<img class="img-responsive" src="images/slides/demo-slide-3.jpg" alt="">
-								<div class="slide-item-caption-wrap">
-									<div class="slide-item-caption-cont">
-										<div class="slide-item-caption-info">
-											<p class="product-cat">Lookbook</p>
-											<span class="divider bg-color1"></span>
-											<h1>20% Off New!<br>
-											Limited Edition<br>
-											collection</h1>
-											<p class="btn-group"><a href="#" class="btn btn-default">Shop Men's</a> <a href="#" class="btn btn-default">Shop Women's</a></p>
+									<div class="col-md-4">
+										<div class="featured-box featured-box-secondary">
+											<div class="box-content">
+												<h4>Your Order</h4>
+												<table class="cart-totals">
+													<tbody>
+														<tr class="cart_table_item">
+															<th>
+																<span class="product-name">Linen shirt with ribbon at the front</span><br>
+																<span class="quantity">Quantity: 1</span>
+															</th>
+															<td class="product-price">
+																<span class="amount">$299</span>
+															</td>
+														</tr>
+														<tr class="cart_table_item">
+															<th>
+																<span class="product-name">Jacket with stretch sides</span><br>
+																<span class="quantity">Quantity: 1</span>
+															</th>
+															<td class="product-price">
+																<span class="amount">$299</span>
+															</td>
+														</tr>
+														<tr class="cart-subtotal">
+															<th>
+																Cart Subtotal
+															</th>
+															<td class="product-price">
+																<span class="amount">$431</span>
+															</td>
+														</tr>
+														<tr class="shipping">
+															<th>
+																Shipping
+															</th>
+															<td>
+																Free Shipping<input type="hidden" value="free_shipping" id="shipping_method" name="shipping_method">
+															</td>
+														</tr>
+														<tr class="total">
+															<th>
+																Total
+															</th>
+															<td class="product-price">
+																<strong><span class="amount">$431</span></strong>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<h4>Payment Method</h4>
+												<div class="panel-group panel-group2" id="accordion">
+													<div class="panel panel-default">
+														<div class="panel-heading">
+															<h5 class="panel-title"> <label><input type="radio" id="radio1" name="radio"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Direct Bank Transfer</a></label>
+															</h5>
+														</div>
+														<div id="collapseOne" class="panel-collapse collapse in">
+															<div class="panel-body"> 
+																<p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order wont be shipped until the funds have cleared in our account.</p>
+															</div>
+														</div>
+													</div>
+													<div class="panel panel-default">
+														<div class="panel-heading">
+															<h5 class="panel-title"> <label><input type="radio" id="radio2" name="radio"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Cheque Payment</a></label> </h5>
+														</div>
+														<div id="collapseTwo" class="panel-collapse collapse">
+															<div class="panel-body"> <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.</p> </div>
+														</div>
+													</div>
+													<div class="panel panel-default">
+														<div class="panel-heading">
+															<h5 class="panel-title"> <label><input type="radio" id="radio3" name="radio"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">PayPal</a></label> </h5>
+														</div>
+														<div id="collapseThree" class="panel-collapse collapse">
+															<div class="panel-body">
+																<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry.</p>
+															</div>
+														</div>
+													</div>
+												</div>
+												<p><input type="submit" value="Place Order" class="btn btn-primary btn-block" data-loading-text="Loading..."></p>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<section class="featured-cat">
-						<div class="container">
-							<div class="row row-fluid">
-								<div class="col-xs-6">
-									<div class="cat-thumb-item cat-thumb-video">
-										<div class="cat-thumb-item-img">
-											<img class="img-responsive" src="images/products/demo-1.jpg" alt="">
-											<span class="cat-thumb-act">
-												<a href="#"><i class="fa fa-play-circle-o"></i></a>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-6">
-									<div class="row row-fluid cat-thumb-item">
-										<div class="col-xs-6 col-xs-offset-6 cat-thumb-item-img">
-											<img class="img-responsive" src="images/products/demo-2.jpg" alt="">
-										</div>
-										<div class="col-xs-6 cat-thumb-item-content-wrap bg-color1">
-											<div class="cat-thumb-item-content">
-												<div class="cat-thumb-item-content-inner">
-													<p class="product-cat">Online Sale</p>
-													<h3><a href="#">Aquatimer Automatic Watches</a></h3>
-													<p><a href="#">Shop now</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-6">
-									<div class="row row-fluid cat-thumb-item">
-										<div class="col-xs-6 col-xs-offset-6 cat-thumb-item-content-wrap">
-											<div class="cat-thumb-item-content">
-												<div class="cat-thumb-item-content-inner">
-													<p class="product-cat">Autumn 2014</p>
-													<h3><a href="#">Lookbook Printemps</a></h3>
-													<p><a href="#">See the collection</a></p>
-												</div>
-											</div>
-										</div>
-										<div class="col-xs-6 cat-thumb-item-img">
-											<img class="img-responsive" src="images/products/demo-3.jpg" alt="">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					
-					<section class="latest">
-						<div class="container">
-							<h2>Our Latest Picks</h2>
-							<p>The best of luxury watches</p>
-							<div class="row">
-								<div class="owl-carousel multi-slides" data-plugin-options='{"items": 4, "singleItem": false, "itemsDesktop": 3, "pagination": false, "navigation": true}'>
-									<div class="col-md-12">
-										<div class="thumb-item">
-											<div class="thumb-item-img">
-												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-1.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-1-over.jpg" alt="">
-												</a>
-												<span class="thumb-act thumb-act-first">
-													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
-													<a href="#"><i class="fa fa-heart-o"></i></a>
-													<a href="#"><i class="fa fa-exchange"></i></a>
-												</span>
-											</div>
-											<div class="thumb-item-content">
-												<div class="star-rating pull-right" title="Rated 5.00 out of 5">
-													<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
-												</div>
-												<h3><a href="#">Silver Stainless Steel</a></h3>
-												<p class="product-cat"><a href="#">Bags</a>, <a href="#">Accessories</a></p>
-												<p class="product-price"><ins>$280.00</ins></p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="thumb-item">
-											<div class="thumb-item-img">
-												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-2.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-2-over.jpg" alt="">
-												</a>
-												<span class="thumb-act thumb-act-first">
-													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
-													<a href="#"><i class="fa fa-heart-o"></i></a>
-													<a href="#"><i class="fa fa-exchange"></i></a>
-												</span>
-											</div>
-											<div class="thumb-item-content">
-												<div class="star-rating pull-right" title="Rated 5.00 out of 5">
-													<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
-												</div>
-												<h3><a href="#">Silver Stainless Steel</a></h3>
-												<p class="product-cat"><a href="#">Bags</a>, <a href="#">Accessories</a></p>
-												<p class="product-price"><ins>$280.00</ins></p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="thumb-item">
-											<div class="thumb-item-img">
-												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-3.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-3-over.jpg" alt="">
-												</a>
-												<span class="thumb-act thumb-act-first">
-													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
-													<a href="#"><i class="fa fa-heart-o"></i></a>
-													<a href="#"><i class="fa fa-exchange"></i></a>
-												</span>
-											</div>
-											<div class="thumb-item-content">
-												<div class="star-rating pull-right" title="Rated 5.00 out of 5">
-													<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
-												</div>
-												<h3><a href="#">Silver Stainless Steel</a></h3>
-												<p class="product-cat"><a href="#">Bags</a>, <a href="#">Accessories</a></p>
-												<p class="product-price"><ins>$280.00</ins></p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="thumb-item">
-											<div class="thumb-item-img">
-												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-4.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-4-over.jpg" alt="">
-												</a>
-												<span class="thumb-act thumb-act-first">
-													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
-													<a href="#"><i class="fa fa-heart-o"></i></a>
-													<a href="#"><i class="fa fa-exchange"></i></a>
-												</span>
-											</div>
-											<div class="thumb-item-content">
-												<div class="star-rating pull-right" title="Rated 5.00 out of 5">
-													<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
-												</div>
-												<h3><a href="#">Silver Stainless Steel</a></h3>
-												<p class="product-cat"><a href="#">Bags</a>, <a href="#">Accessories</a></p>
-												<p class="product-price"><ins>$280.00</ins></p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="thumb-item">
-											<div class="thumb-item-img">
-												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-5.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-5-over.jpg" alt="">
-												</a>
-												<span class="thumb-act thumb-act-first">
-													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
-													<a href="#"><i class="fa fa-heart-o"></i></a>
-													<a href="#"><i class="fa fa-exchange"></i></a>
-												</span>
-											</div>
-											<div class="thumb-item-content">
-												<div class="star-rating pull-right" title="Rated 5.00 out of 5">
-													<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
-												</div>
-												<h3><a href="#">Silver Stainless Steel</a></h3>
-												<p class="product-cat"><a href="#">Bags</a>, <a href="#">Accessories</a></p>
-												<p class="product-price"><ins>$280.00</ins></p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					
-					<section class="featured-foot">
-						<div class="container">
-							<div class="row row-fluid">
-								<div class="col-sm-6 contact-info-wrap equal-height bg-img-3">
-									<div class="contact-info">
-										<h2>Our Store</h2>
-										<address>
-											Pzza Martiri Olivetta, 16, 16034, Portofino, Italy
-										</address>
-										<span class="divider bg-color3"></span>
-										<p><strong>Opening hours</strong></p>
-										<p>Monday to Friday: 9am - 6pm<br>
-										Saturday to Sunday: 10am - 4pm</p>
-									</div>
-								</div>
-								<div class="col-sm-6 newsletter bg-color2 equal-height">
-									<div class="newsletter-form">
-										<h2>Sign up for updates</h2>
-										<p>Sign up to get exclusive offers from our store</p>
-										<form role="form">
-											<div class="form-group">
-												<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email Address">
-											</div>
-											<button type="submit" class="btn btn-default">Subscribe</button>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
 				</section>
+								
 			</div>
  
 			<footer id="footer" class="bg-color6">

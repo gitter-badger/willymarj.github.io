@@ -27,11 +27,11 @@
 		<!-- Theme CSS -->
 		<link rel="stylesheet" href="css/theme.css">
 		<link rel="stylesheet" href="css/theme-animate.css">
-		
+
 		<!-- Style Switcher-->
 		<link rel="stylesheet" href="style-switcher/css/style-switcher.css">
 		<link href="css/colors/default/style.html" rel="stylesheet" id="layoutstyle">
-
+		
 		<!-- Head libs -->
 		<script src="vendor/modernizr/modernizr.js"></script>
 
@@ -45,7 +45,7 @@
 		<![endif]-->
 
 	</head>
-	<body class="front bg-pattern-dark">
+	<body class="not-front bg-pattern-dark">
 		<div class="body">
 			<header id="header">
 				<div class="header-top">
@@ -76,10 +76,10 @@
 						<div class="navbar-collapse nav-main-collapse collapse">
 							<nav class="nav-main">
 								<ul class="nav nav-pills nav-main-menu">
-									<li class="dropdown active">
+									<li class="dropdown">
 										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Home</a>
 										<ul class="dropdown-menu">
-											<li class="active"><a href="index-2.html">Home Version 1</a></li>
+											<li><a href="index-2.html">Home Version 1</a></li>
 											<li><a href="index-3.html">Home Version 2</a></li>
 											<li><a href="index-4.html">Home Version 3</a></li>
 											<li><a href="index-5.html">Home Version 4</a></li>
@@ -119,7 +119,7 @@
 																	<img class="img-responsive" src="images/products/product-9.jpg" alt="">
 																	<span class="thumb-act thumb-act-first">
 																		<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-																		<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
+																		<a data-target="#quickview-detail" data-toggle="modal" href="javascript:void(0);"><i class="fa fa-eye"></i></a>
 																		<a href="#"><i class="fa fa-heart-o"></i></a>
 																		<a href="#"><i class="fa fa-exchange"></i></a>
 																	</span>
@@ -231,7 +231,7 @@
 																	<img class="img-responsive" src="images/products/product-4.jpg" alt="">
 																	<span class="thumb-act thumb-act-first">
 																		<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-																		<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
+																		<a data-target="#quickview-detail" data-toggle="modal" href="javascript:void(0);"><i class="fa fa-eye"></i></a>
 																		<a href="#"><i class="fa fa-heart-o"></i></a>
 																		<a href="#"><i class="fa fa-exchange"></i></a>
 																	</span>
@@ -310,7 +310,7 @@
 											</div>
 										</div>
 									</li>
-									<li class="dropdown">
+									<li class="dropdown active">
 										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop</a>
 										<ul class="dropdown-menu">
 											<li><a href="shop-grid-fullwidth.html">Shop Grid Full Width</a></li>
@@ -320,7 +320,7 @@
 											<li><a href="shop-product-detail-fullwidth.html">Product Detail FullWidth</a></li>
 											<li><a href="shop-product-detail-classic.html">Product Detail Classic</a></li>
 											<li><a href="shop-product-detail-custom.html">Product Detail Custom</a></li>
-											<li><a href="shop-cart-full.html">Shopping Cart Full</a></li>
+											<li class="active"><a href="shop-cart-full.html">Shopping Cart Full</a></li>
 											<li><a href="shop-checkout.html">Shop-Checkout</a></li>
 										</ul>
 									</li>
@@ -361,266 +361,234 @@
 				
 			</header>
 
-			<div role="main" class="main">
+			<div role="main" class="main shop">
+				
 				<section class="main-content-wrap">
 					<div class="container">
-						<div class="owl-carousel main-slides first-slides" data-plugin-options='{"items": 1, "autoPlay": false, "navigation": true}'>
-							<div class="slide-item">
-								<img class="img-responsive" src="images/slides/demo-slide-1.jpg" alt="">
-								<div class="slide-item-caption-wrap">
-									<div class="slide-item-caption-cont">
-										<div class="slide-item-caption-info">
-											<p class="product-cat">Lookbook</p>
-											<span class="divider bg-color1"></span>
-											<h1>Fall/Winter<br>
-											2014 new<br>
-											collection</h1>
-											<p class="btn-group"><a href="#" class="btn btn-default">Shop Men's</a> <a href="#" class="btn btn-default">Shop Women's</a></p>
+						<div class="row">
+							<div class="col-md-12 main-content main-content-full">
+								<div class="featured-boxes">
+									
+									<h3>Shopping cart</h3>
+									<div class="featured-box featured-box-cart">
+										<div class="box-content">
+											<form>
+												<table class="shop_table">
+													<thead>
+														<tr>
+															<th class="thumb-item-img">
+																Item
+															</th>
+															<th class="product-name">
+																Product name
+															</th>
+															<th class="product-price">
+																Price
+															</th>
+															<th class="product-quantity">
+																Quantity
+															</th>
+															<th class="product-subtotal">
+																SubTotal
+															</th>
+															<th class="product-remove">
+																&nbsp;
+															</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr class="cart_table_item">
+															
+															<td class="thumb-item-img">
+																<a href="shop-product-sidebar.html">
+																	<img alt="" width="80" src="images/products/product-1.jpg">
+																</a>
+															</td>
+															<td class="product-name">
+																<a href="shop-product-sidebar.html">Linen shirt with ribbon at the front</a>
+															</td>
+															<td class="product-price">
+																<span class="amount">$299</span>
+															</td>
+															<td class="product-quantity">
+																
+																<div class="quantity">
+																	<input type="button" class="minus" value="-">
+																	<input type="text" class="input-text qty text" title="Qty" value="1" name="quantity">
+																	<input type="button" class="plus" value="+">
+																</div>
+																
+															</td>
+															<td class="product-subtotal">
+																<span class="amount">$299</span>
+															</td>
+															<td class="product-remove">
+																<a title="Remove this item" class="remove" href="#">
+																	<i class="fa fa-times-circle"></i>
+																</a>
+															</td>
+														</tr>
+														<tr class="cart_table_item">
+															
+															<td class="thumb-item-img">
+																<a href="shop-product-sidebar.html">
+																	<img alt="" width="80" src="images/products/product-2.jpg">
+																</a>
+															</td>
+															<td class="product-name">
+																<a href="shop-product-sidebar.html">Poplin shirt with fine pleated bands</a>
+															</td>
+															<td class="product-price">
+																<span class="amount">$72</span>
+															</td>
+															<td class="product-quantity">
+																
+																<div class="quantity">
+																	<input type="button" class="minus" value="-">
+																	<input type="text" class="input-text qty text" title="Qty" value="1" name="quantity">
+																	<input type="button" class="plus" value="+">
+																</div>
+																
+															</td>
+															<td class="product-subtotal">
+																<span class="amount">$72</span>
+															</td>
+															<td class="product-remove">
+																<a title="Remove this item" class="remove" href="#">
+																	<i class="fa fa-times-circle"></i>
+																</a>
+															</td>
+														</tr>
+														<tr class="cart_table_item">
+															
+															<td class="thumb-item-img">
+																<a href="shop-product-sidebar.html">
+																	<img alt="" width="80" src="images/products/product-3.jpg">
+																</a>
+															</td>
+															<td class="product-name">
+																<a href="shop-product-sidebar.html">Contrasting shirt</a>
+															</td>
+															<td class="product-price">
+																<span class="amount">$60</span>
+															</td>
+															<td class="product-quantity">
+																
+																<div class="quantity">
+																	<input type="button" class="minus" value="-">
+																	<input type="text" class="input-text qty text" title="Qty" value="1" name="quantity">
+																	<input type="button" class="plus" value="+">
+																</div>
+																
+															</td>
+															<td class="product-subtotal">
+																<span class="amount">$60</span>
+															</td>
+															<td class="product-remove">
+																<a title="Remove this item" class="remove" href="#">
+																	<i class="fa fa-times-circle"></i>
+																</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</form>
 										</div>
 									</div>
+									
 								</div>
-							</div>
-							<div class="slide-item">
-								<img class="img-responsive" src="images/slides/demo-slide-2.jpg" alt="">
-								<div class="slide-item-caption-wrap">
-									<div class="slide-item-caption-cont">
-										<div class="slide-item-caption-info">
-											<p class="product-cat">Winter Style</p>
-											<span class="divider bg-color1"></span>
-											<h1>All The Trends You Need This Season</h1>
-											<p class="btn-group"><a href="#" class="btn btn-default">Shop Men's</a> <a href="#" class="btn btn-default">Shop Women's</a></p>
+
+								<div class="row featured-boxes">
+									<div class="col-sm-4">
+										<div class="featured-box featured-box-secondary">
+											<div class="box-content">
+												<h4>Promotional Code</h4>
+												<p>Enter promotional code if you have one</p>
+												<form>
+													<div class="form-group">
+														<label class="sr-only">Promotional code</label>
+														<input type="text" value="" class="form-control" placeholder="Enter promotional code here">
+													</div>
+													<div class="form-group">
+														<input type="submit" value="Apply Promotion" class="btn btn-grey" data-loading-text="Loading...">
+													</div>
+												</form>
+											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div class="slide-item">
-								<img class="img-responsive" src="images/slides/demo-slide-3.jpg" alt="">
-								<div class="slide-item-caption-wrap">
-									<div class="slide-item-caption-cont">
-										<div class="slide-item-caption-info">
-											<p class="product-cat">Lookbook</p>
-											<span class="divider bg-color1"></span>
-											<h1>20% Off New!<br>
-											Limited Edition<br>
-											collection</h1>
-											<p class="btn-group"><a href="#" class="btn btn-default">Shop Men's</a> <a href="#" class="btn btn-default">Shop Women's</a></p>
+									<div class="col-sm-4">
+										<div class="featured-box featured-box-secondary">
+											<div class="box-content">
+												<h4>Calculate Shipping</h4>
+												<p>Enter your destination to get a shipping estimate.</p>
+												<form>
+													<div class="form-group">
+														<label class="sr-only">Country</label>
+														<select class="chosen-select">
+															<option value="">Select a country</option>
+														</select>
+													</div>
+													<div class="form-group">
+														<label class="sr-only">State/Province</label>
+														<select class="chosen-select">
+															<option value="">Select State/Province</option>
+														</select>
+													</div>
+													<div class="form-group">
+														<label class="sr-only">Zip/Postal Code</label>
+														<input type="text" value="" class="form-control" placeholder="Zip/Postal Code">
+													</div>
+													<div class="form-group">
+														<input type="submit" value="Update Totals" class="btn btn-grey" data-loading-text="Loading...">
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="featured-box featured-box-secondary">
+											<div class="box-content">
+												<h4>Shopping bag summary</h4>
+												<table class="cart-totals">
+													<tbody>
+														<tr class="cart-subtotal">
+															<th>
+																Cart Subtotal
+															</th>
+															<td>
+																<span class="amount">$431</span>
+															</td>
+														</tr>
+														<tr class="shipping">
+															<th>
+																Shipping
+															</th>
+															<td>
+																Free Shipping<input type="hidden" value="free_shipping" id="shipping_method" name="shipping_method">
+															</td>
+														</tr>
+														<tr class="total">
+															<th>
+																Total
+															</th>
+															<td>
+																<span class="amount">$431</span>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+												<p><input type="submit" value="Update Shopping Bag" class="btn btn-default btn-block" data-loading-text="Loading..."></p>
+												<p><input type="submit" value="Proceed To checkout" class="btn btn-primary btn-block" data-loading-text="Loading..."></p>
+												<p><input type="submit" value="Continue Shopping" class="btn btn-grey btn-block" data-loading-text="Loading..."></p>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<section class="featured-cat">
-						<div class="container">
-							<div class="row row-fluid">
-								<div class="col-xs-6">
-									<div class="cat-thumb-item cat-thumb-video">
-										<div class="cat-thumb-item-img">
-											<img class="img-responsive" src="images/products/demo-1.jpg" alt="">
-											<span class="cat-thumb-act">
-												<a href="#"><i class="fa fa-play-circle-o"></i></a>
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-6">
-									<div class="row row-fluid cat-thumb-item">
-										<div class="col-xs-6 col-xs-offset-6 cat-thumb-item-img">
-											<img class="img-responsive" src="images/products/demo-2.jpg" alt="">
-										</div>
-										<div class="col-xs-6 cat-thumb-item-content-wrap bg-color1">
-											<div class="cat-thumb-item-content">
-												<div class="cat-thumb-item-content-inner">
-													<p class="product-cat">Online Sale</p>
-													<h3><a href="#">Aquatimer Automatic Watches</a></h3>
-													<p><a href="#">Shop now</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-6">
-									<div class="row row-fluid cat-thumb-item">
-										<div class="col-xs-6 col-xs-offset-6 cat-thumb-item-content-wrap">
-											<div class="cat-thumb-item-content">
-												<div class="cat-thumb-item-content-inner">
-													<p class="product-cat">Autumn 2014</p>
-													<h3><a href="#">Lookbook Printemps</a></h3>
-													<p><a href="#">See the collection</a></p>
-												</div>
-											</div>
-										</div>
-										<div class="col-xs-6 cat-thumb-item-img">
-											<img class="img-responsive" src="images/products/demo-3.jpg" alt="">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					
-					<section class="latest">
-						<div class="container">
-							<h2>Our Latest Picks</h2>
-							<p>The best of luxury watches</p>
-							<div class="row">
-								<div class="owl-carousel multi-slides" data-plugin-options='{"items": 4, "singleItem": false, "itemsDesktop": 3, "pagination": false, "navigation": true}'>
-									<div class="col-md-12">
-										<div class="thumb-item">
-											<div class="thumb-item-img">
-												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-1.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-1-over.jpg" alt="">
-												</a>
-												<span class="thumb-act thumb-act-first">
-													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
-													<a href="#"><i class="fa fa-heart-o"></i></a>
-													<a href="#"><i class="fa fa-exchange"></i></a>
-												</span>
-											</div>
-											<div class="thumb-item-content">
-												<div class="star-rating pull-right" title="Rated 5.00 out of 5">
-													<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
-												</div>
-												<h3><a href="#">Silver Stainless Steel</a></h3>
-												<p class="product-cat"><a href="#">Bags</a>, <a href="#">Accessories</a></p>
-												<p class="product-price"><ins>$280.00</ins></p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="thumb-item">
-											<div class="thumb-item-img">
-												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-2.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-2-over.jpg" alt="">
-												</a>
-												<span class="thumb-act thumb-act-first">
-													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
-													<a href="#"><i class="fa fa-heart-o"></i></a>
-													<a href="#"><i class="fa fa-exchange"></i></a>
-												</span>
-											</div>
-											<div class="thumb-item-content">
-												<div class="star-rating pull-right" title="Rated 5.00 out of 5">
-													<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
-												</div>
-												<h3><a href="#">Silver Stainless Steel</a></h3>
-												<p class="product-cat"><a href="#">Bags</a>, <a href="#">Accessories</a></p>
-												<p class="product-price"><ins>$280.00</ins></p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="thumb-item">
-											<div class="thumb-item-img">
-												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-3.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-3-over.jpg" alt="">
-												</a>
-												<span class="thumb-act thumb-act-first">
-													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
-													<a href="#"><i class="fa fa-heart-o"></i></a>
-													<a href="#"><i class="fa fa-exchange"></i></a>
-												</span>
-											</div>
-											<div class="thumb-item-content">
-												<div class="star-rating pull-right" title="Rated 5.00 out of 5">
-													<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
-												</div>
-												<h3><a href="#">Silver Stainless Steel</a></h3>
-												<p class="product-cat"><a href="#">Bags</a>, <a href="#">Accessories</a></p>
-												<p class="product-price"><ins>$280.00</ins></p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="thumb-item">
-											<div class="thumb-item-img">
-												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-4.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-4-over.jpg" alt="">
-												</a>
-												<span class="thumb-act thumb-act-first">
-													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
-													<a href="#"><i class="fa fa-heart-o"></i></a>
-													<a href="#"><i class="fa fa-exchange"></i></a>
-												</span>
-											</div>
-											<div class="thumb-item-content">
-												<div class="star-rating pull-right" title="Rated 5.00 out of 5">
-													<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
-												</div>
-												<h3><a href="#">Silver Stainless Steel</a></h3>
-												<p class="product-cat"><a href="#">Bags</a>, <a href="#">Accessories</a></p>
-												<p class="product-price"><ins>$280.00</ins></p>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="thumb-item">
-											<div class="thumb-item-img">
-												<a href="shop-product-detail-classic.html" class="btn-detail">
-													<img class="img-responsive" src="images/products/product-5.jpg" alt="">
-													<img class="img-responsive" src="images/products/product-5-over.jpg" alt="">
-												</a>
-												<span class="thumb-act thumb-act-first">
-													<a href="#" class="btn-cart"><i class="fa fa-shopping-cart"></i></a>
-													<a href="javascript:void(0);" data-toggle="modal" data-target="#quickview-detail"><i class="fa fa-eye"></i></a>
-													<a href="#"><i class="fa fa-heart-o"></i></a>
-													<a href="#"><i class="fa fa-exchange"></i></a>
-												</span>
-											</div>
-											<div class="thumb-item-content">
-												<div class="star-rating pull-right" title="Rated 5.00 out of 5">
-													<span style="width:100%"><strong class="rating">5.00</strong> out of 5</span>
-												</div>
-												<h3><a href="#">Silver Stainless Steel</a></h3>
-												<p class="product-cat"><a href="#">Bags</a>, <a href="#">Accessories</a></p>
-												<p class="product-price"><ins>$280.00</ins></p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					
-					<section class="featured-foot">
-						<div class="container">
-							<div class="row row-fluid">
-								<div class="col-sm-6 contact-info-wrap equal-height bg-img-3">
-									<div class="contact-info">
-										<h2>Our Store</h2>
-										<address>
-											Pzza Martiri Olivetta, 16, 16034, Portofino, Italy
-										</address>
-										<span class="divider bg-color3"></span>
-										<p><strong>Opening hours</strong></p>
-										<p>Monday to Friday: 9am - 6pm<br>
-										Saturday to Sunday: 10am - 4pm</p>
-									</div>
-								</div>
-								<div class="col-sm-6 newsletter bg-color2 equal-height">
-									<div class="newsletter-form">
-										<h2>Sign up for updates</h2>
-										<p>Sign up to get exclusive offers from our store</p>
-										<form role="form">
-											<div class="form-group">
-												<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your Email Address">
-											</div>
-											<button type="submit" class="btn btn-default">Subscribe</button>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
 				</section>
+								
 			</div>
  
 			<footer id="footer" class="bg-color6">
